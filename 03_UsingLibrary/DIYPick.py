@@ -9,7 +9,7 @@ def main():
             '2. Automatically Detect Current Year',  
             '3. Exit'
         ]
-        choosen_menu, index_choosen = pick(options, title)
+        chosen_menu, index_chosen = pick(options, title)
         
 
         # print("---- Leap Year Program -----")
@@ -19,13 +19,13 @@ def main():
 
         # year = 0
 
-        if index_choosen == 2:
+        if index_chosen == 2:
             break
 
-        elif index_choosen == 0:
+        elif index_chosen == 0:
             year = int(input('Year : '))
                 
-        elif index_choosen == 1:
+        elif index_chosen == 1:
             current = datetime.datetime.now()
             year = int(current.strftime("%Y"))
             print("Current Year : {}".format(year))
