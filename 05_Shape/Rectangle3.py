@@ -1,3 +1,8 @@
+# x 
+# x x 
+# x x x 
+# x x x x 
+# x x x x x 
 length = int(input("Length Triangle: "))  
 
 max_number = 1

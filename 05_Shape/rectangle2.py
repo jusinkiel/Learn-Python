@@ -1,3 +1,8 @@
+# - | - | - 
+# | - | - | 
+# - | - | - 
+# | - | - | 
+# - | - | - 
 length = int(input("Length Rectangle: "))  
 
 for row in range(0,length):

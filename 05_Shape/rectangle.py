@@ -1,3 +1,8 @@
+# * * * * * 
+# * *   * * 
+# *   *   * 
+# * *   * * 
+# * * * * *
 length = int(input("Length Rectangle : "))
 
 # for row in range(0, length):
@@ -18,8 +23,5 @@ for row in range(0, length):
             print  ('*', end=' ')
         else:
             print(' ', end=' ')
-        
-
-
-    # Change the line
+            
     print('')
