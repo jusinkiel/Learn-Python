@@ -5,9 +5,21 @@ def menu():
     print("3. Triangle")
 
     choosen_menu = input("Menu : ")
+
+    if choosen_menu == 3: 
+        length = input("Length : ")
+        print(length)
+
+
+    # Outside If Section
+    print(length)
+
+
     return choosen_menu
 
 
 choosen = menu()
 print("Choosen ", choosen) 
+
+
 # print("Choosen Menu ", choosen_menu) Local V

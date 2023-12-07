@@ -13,3 +13,7 @@ string1 = 'Malvin'
 if number2 > 100:
     print('Its big number')
     print('Blablabla')
+
+
+def test():
+    print("Test")

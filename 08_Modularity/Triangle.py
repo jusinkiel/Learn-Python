@@ -1,0 +1,2 @@
+def triangle():
+    print("Triangle")
