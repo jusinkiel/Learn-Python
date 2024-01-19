@@ -52,9 +52,12 @@ def main():
 
         elif menu == '3':
             Triangle(tmp_length) 
-        
+
         else:
             break
+
+        print("blablabla")
+
 
 if __name__ == '__main__':
     main()

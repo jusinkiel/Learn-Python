@@ -2,8 +2,8 @@ number = 5
 
 # For
 tmp = [0, 1, 2, 3, 4] # range(0, 5)
-for i in [0, 3, 5]:
-    print("Number {}".format(i))
+for numbersssssss in [0, 3, 5]:
+    print("Number {}".format(numbersssssss))
     print("---------")
 
 # tmp = 1
