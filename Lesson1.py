@@ -1,19 +1,11 @@
-# inputs = input("Input a number : ")
-# print(type(inputs))
+names = ['Malvin', 'Kiel'] # Array
 
-# number = int(inputs)
-number2 = 10
-string1 = 'Malvin'
+# for loop or for in or for each
+for name in names:
+    print(name)
 
-# if number % 2 == 0:
-#     print('Even Number')
-# else:
-#     print('Odd Number')
+names.append('David')
 
-if number2 > 100:
-    print('Its big number')
-    print('Blablabla')
+for name in names:
+    print(name)
 
-
-def test():
-    print("Test")
