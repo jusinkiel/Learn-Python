@@ -1,0 +1,18 @@
+Python -> is usually for the background job machine 
+
+
+Google Maps
+ - UI = the  (Android Apps, iOS Apps, Website)
+ - Engine = calculate the shortest distance / best way to go to destination (Python, Java, NodeJS, ....)
+
+
+HTML ? -> Language for UI Website
+
+<xxx> -> tag open
+</xxx> -> tag close
+
+
+
+
+<h1>Dog</h1> --> Title
+<p>Dog is an animal, he is so funny animal blablablaba</p> -> Paragraph

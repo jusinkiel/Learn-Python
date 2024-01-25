@@ -5,7 +5,7 @@
 # 4. Array / List
 
 
-tmp = ["Malvin", "Kiel"]
+tmp = ["parah1", "pparag2"]
 # print(tmp[0]) #Malvin
 # print(tmp[1]) #Kiel
 # print("-1", tmp[-1]) #Kiel

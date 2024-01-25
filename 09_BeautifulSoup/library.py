@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 wiki = input('Enter the wiki:')
 
 url = "https://en.wikipedia.org/wiki/{urllib.parse.quote(wiki)}"
+url = "file:///Users/justinkielpascualmontano/Downloads/Learn-Python/11_HTML/learn.html"
 response = requests.get(url)
 
 # response = None
@@ -11,7 +12,7 @@ response = requests.get(url)
 if response is not None:
     html = BeautifulSoup(response.text, 'html.parser')
 
-    title = html.select("#firstHeading")[0].text
+    # title = html.select("#firstHeading")[0].text
     paragraphs = html.select("p")
     for para in paragraphs:
         print (para.text)
