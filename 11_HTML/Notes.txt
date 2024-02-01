@@ -8,9 +8,22 @@ Google Maps
 
 HTML ? -> Language for UI Website
 
+
+
+--- Terminology ---
 <xxx> -> tag open
 </xxx> -> tag close
 
+<h1>This is a title</h1>  -> element
+
+<img src="xxxxx" /> --> src -> attribute name of tag img, xxxx is attriute value
+<img src="xxxx"></img>  -> <img />
+
+
+--- HTML + CSS + Javascript
+- HTML = Bone
+- CSS / Styling = beauty
+- Javascript = strong (muscle)
 
 
 
