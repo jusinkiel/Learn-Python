@@ -29,3 +29,38 @@ HTML ? -> Language for UI Website
 
 <h1>Dog</h1> --> Title
 <p>Dog is an animal, he is so funny animal blablablaba</p> -> Paragraph
+
+
+
+--- Color ---
+RGB = 0-255
+RED, GREEN, BLUE = 255 = White
+
+
+White, Black, Red, Yellow, Blue 
+Yellow + blue -> Green
+
+
+-- Decimal 
+0123456789 10...19  20
+
+
+-- Hexadecimal 
+0123456789ABCDEF 0...F
+
+A = 10
+B = 11
+C = 12
+D = 13
+E = 14
+F = 15 
+10 11 12 13 .. 1F
+
+1F = 10 + F = 16 + 15 = 31
+
+255 = FF
+00 = 0 
+FF= 255
+
+
+document.querySelector("/html/body/div[9]/div/div[1]/div[2]/section/section/article[1]/div[2]/div/div[1]/div/picture/img").src='https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*'
