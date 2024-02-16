@@ -29,8 +29,38 @@
 
         <!-- Javascript -->
         <script>
+            console.log("Script at head section")
             // alert('Hi');
             // confirm('Do you really want to delete ?')
+
+            const nmber = 2;
+            if(nmber > 100) {
+                console.log('big number')
+            } else {
+                console.log('small number')
+            }
+ 
+            // Function
+            function get_inner_html() {
+                const heading1 = document.querySelector('h1')
+                heading1.style.backgroundColor = '#57EDDD'
+                console.log('InnerHTML of Heading1', heading1.innerHTML) 
+            }
+
+            // Inner Function
+            // Function that have no declaration
+            // () => { ..... }
+
+            // Option 1
+            document.addEventListener('DOMContentLoaded', get_inner_html)
+
+            // Option 2
+            document.addEventListener('DOMContentLoaded', () => {
+                // const heading1 = document.querySelector('h1')
+                // heading1.style.backgroundColor = '#57EDDD'
+                // console.log('InnerHTML of Heading1', heading1.innerHTML) 
+            })
+
         </script>
     </head>
 
@@ -41,7 +71,6 @@
         </p>
 
 
-
         <img src="https://i.ebayimg.com/thumbs/images/g/v6sAAOSwzVBlu15d/s-l300.webp" loading="eager" 
             alt="Nutrilite Amway Nutrilite All Plant Protein Powder pure Veg- 1Kg (Butterscotch)" />
     </body>
@@ -50,10 +79,10 @@
         // const <variable_name> = <value>
         // const / var / let
 
-        const heading1 = document.querySelector('h1')
-        heading1.style.backgroundColor = '#57EDDD'
-        console.log('InnerHTML of Heading1', heading1.innerHTML)
+        // const heading1 = document.querySelector('h1')
+        // heading1.style.backgroundColor = '#57EDDD'
+        // console.log('InnerHTML of Heading1', heading1.innerHTML)
 
-        heading1.innerHTML = 'jackie montano'
+        // heading1.innerHTML = 'jackie montano'
     </script>
 </html>
