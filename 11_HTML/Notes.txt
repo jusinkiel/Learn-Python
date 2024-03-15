@@ -23,7 +23,7 @@ HTML ? -> Language for UI Website
 --- HTML + CSS + Javascript
 - HTML = Bone
 - CSS / Styling = beauty
-- Javascript = strong (muscle)
+- Javascript = CSS + HTML + Python
 
 
 
@@ -64,3 +64,23 @@ FF= 255
 
 
 document.querySelector("/html/body/div[9]/div/div[1]/div[2]/section/section/article[1]/div[2]/div/div[1]/div/picture/img").src='https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*'
+
+
+
+/html/body/div
+
+
+
+CSS Selector 
+ 1. tag div {
+
+ }
+
+ 2. class
+ 3. id
+
+ //*[@id="very-important"]
+
+ //*[@id="islrg"]/div[1]/div[1]/a[1]/div[1]/img
+
+ //*[@id="islrg"]/div[1]/div[2]/a[1]/div[1]/img
