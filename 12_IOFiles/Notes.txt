@@ -1,0 +1,5 @@
+.txt -> extension
+Image Extension = .jpg, .png, .jiff, .gif, 
+Video = .mp4, .avi, .3gp
+Audi = .mp3
+Python = .py
