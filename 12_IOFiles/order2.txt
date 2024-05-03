@@ -1,1 +1,6 @@
-rice
+Fried rice
+Burger
+Potatoes
+..
+...
+..

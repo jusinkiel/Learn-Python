@@ -1,6 +1,6 @@
 tmp = input("Choose Food: ")
 
-f = open('order2.txt', 'w+')
+f = open('order3.txt', 'w+')
 
 f.write(tmp)
 f.close()
