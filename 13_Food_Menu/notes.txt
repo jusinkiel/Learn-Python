@@ -1,0 +1,62 @@
+CRUD ?
+CReate, Update, Delete
+
+ID Card, CitizenID -> Identifier of Kiel 
+
+
+Example Object Menu 
+- Every object has an identifier
+- Identifier needs to be unique
+
+1. Chicken - 15
+2. Rice - 3
+3. Soup - 9
+4. New Menu - 7
+
+# Add a new things
+
+# Edit / Update <-----
+1. Which Identifier that u want to update ?
+2. I wnt to upd ID=3 _> Soup
+3. I change price from 9 to 10
+
+# Delete
+1. Whichdata that u want to delete ?
+2. I want to delete ID = 2 -> Rice
+
+1. Food Menu
+Object = Menu -> CRUD
+Attribute : 
+- Pricing
+- Condiment
+- Cold or Hot
+- Halal or Non-Halal
+- Halal contains no pig 
+- Non Halal = contains pig
+
+2. Phone Contact
+Object = The contact Person
+Attribute : 
+- Phone number 1, 2, 3, 4 ..
+- Post Code
+- Address
+- Many More
+
+3. Book Account, new transaction,
+Object = transaction
+Attribute : 
+- Bank History 
+- Amount of transaction
+- Transaction Category
+
+4. Create a post, edit the caption, delete your post
+Object = posting
+Attribute : 
+- Picture 
+- Description
+- Title
+- Music 
+- Tag People
+- Location 
+- Comment
+- Many More

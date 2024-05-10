@@ -1,6 +1,6 @@
-Chicken - 15
+Rice Bowl - 4
 Rice - 3
 Soup - 9
-Chicken Rice Bowl - 20
+Chicken Noodle Soup - 10
 Fish fillet - 10
 Dried Noodles - 3
