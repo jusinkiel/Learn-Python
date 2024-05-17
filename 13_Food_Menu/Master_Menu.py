@@ -33,25 +33,19 @@ def update_menu():
     new = input("New Item Name : ")
     prce = input ("New Price : ")
 
-    data = []
+    tmp_data = []
     with open('food.txt') as file:
-        for index, text in enumerate(file.readlines()):
-            if str(index) != id:
-                data.append(text) # Take the original data
+        for old_index, new_item in enumerate(file.readlines()):
+            if str(old_index) != id:
+                tmp_data.append(new_item) # Take the original data
             else: #index == id, take teh data based on user input
-                data.append("{menu_name} - {menu_price}\n".format(
+                tmp_data.append("{menu_name} - {menu_price}\n".format(
                     menu_name = new, 
                     menu_price = prce))
                 
-    # data = [
-    #     'chicken-15',
-    #     'xxx-1',
-    #     'yyy-2'
-    # ]
-
     rda = open('food.txt', 'w')
-    for text in data:
-        print(text, file=rda, end='')
+    for new_item in tmp_data:
+        print(new_item, file=rda, end='')
     rda.close()
 
             
