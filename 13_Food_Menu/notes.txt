@@ -60,3 +60,35 @@ Attribute :
 - Location 
 - Comment
 - Many More
+
+
+tmp_order = []
+[ #1
+    [choosen_food, choosen_price, amt, total_price], #1
+    [choosen_food, choosen_price, amt, total_price], #2
+    [choosen_food, choosen_price, amt, total_price], #3
+    [choosen_food, choosen_price, amt, total_price], #4
+    [choosen_food, choosen_price, amt, total_price], #5
+    [choosen_food, choosen_price, amt, total_price], #6
+]
+
+
+
+[ #1
+    ['Nice', 4, 2, 8],
+    ['Chicken Noddle Soup', 10, 1, 10]
+]
+
+array_food = ['Chicken', 'Milk Tea', 'XXX', "YYY"]
+array_price = []
+array_amount = []
+array_total_price = []
+
+
+------------------------------------
+Food Menu     Price   Amt    Total
+------------------------------------
+Rice          4       2      8
+Chicken Soup  10      1      10
+------------------------------------
+                             18

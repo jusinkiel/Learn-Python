@@ -1,17 +1,9 @@
-names = ["Malvin", "Kiel", "David"]
-ages = [25, 17, 20]
 
-# Malvin - 25
-# Kiel - 17
 
-for name in names:
-    print(name, end = ' ')
+food = "Chicken Soup"
+price = 10
+amt = 2
+total = 20
 
-for index, name in enumerate(names):
-    # print(str(index) + " - " + name + " - " + str(ages[index]))
-    # print("{}. {} - {}".format(index, name, ages[index])) 
-    print("{seq}. {user_name} - {user_age}".format(
-        seq = index, 
-        user_name = name, 
-        user_age = ages[index]
-    )) 
+
+print(food.ljust(20) + str(price).ljust(6))
