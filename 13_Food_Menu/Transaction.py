@@ -41,11 +41,24 @@ def taking_order():
         print("You choose : ", choosen_food)
         print("Price      : ", choosen_price)
 
+        tmp_index = -1
+
+        for i, item in enumerate(tmp_ary):
+            if item[0] == choosen_food:
+                tmp_index = i
+                break
+
         amt = int(input("Amount of Food : "))
-        total_price = choosen_price * amt
+        if tmp_index == -1:
+            total_price = choosen_price * amt
+            tmp_ary.append([choosen_food, choosen_price, amt, total_price])
+        else: 
+            tmp_ary[tmp_index][1] += amt
+            total_price = tmp_ary[tmp_index][1] * choosen_price
+            tmp_ary[tmp_index][3] = total_price
+
         print("Total      : ", total_price)
-        
-        tmp_ary.append([choosen_food, choosen_price, amt, total_price])
+
         # tmp_ary[0] = food name
         # tmp_ary[1] = food price
         # tmp_ary[2] = food qty
@@ -69,24 +82,25 @@ while True:
     elif menu == '2':
         orders = taking_order()
 
+        orders = sorted(orders, key=lambda blah: blah[0], reverse=False)
+
         grand_total = sum([i[3] for i in orders])
         print("Your total order is ", grand_total)
         
         print("- " * 35)
         print ("Food Menu".ljust(40) + "Price".ljust(10) + "Amt".ljust(10) + "Total".ljust(10))
         print("- " * 35)
-        for item in orders:
+        for item_order in orders:
             # item = [choosen_food, choosen_price, amt, total_price]
-            choosen_food = item[0]
-            price = str(item[1])
-            amt = str(item[2])
-            total_price = str(item[3])
+            choosen_food = item_order[0]
+            price = str(item_order[1])
+            amt = str(item_order[2])
+            total_price = str(item_order[3])
 
             print(choosen_food.ljust(40) + price.ljust(10) + amt.ljust(10) + total_price.ljust(10))
         print("- " * 35)
         print("Grand Total".rjust(40) + " " * 20 + str(grand_total).ljust(10))
 
-        print(" " * 60 + str(grand_total).ljust(10))
         # print (choosen_food.ljust(20) + str(price).ljust(5))
 
 

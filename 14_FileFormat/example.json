@@ -1,0 +1,34 @@
+{
+    "students": [
+        {   
+            "id": "240001",
+            "firstName": "John",
+            "middleName": "David",
+            "lastName": "Doe"
+        },
+        {
+            "id": "240002",
+            "firstName": "Anna",
+            "lastName": "Smith"
+        },
+        {
+            "id": "230001",
+            "firstName": "Peter",
+            "lastName": "Jones"
+        }
+    ],
+    "employees_fee": [
+        {
+            "id": 1,
+            "fee": "$100"
+        },
+        {
+            "id": 2,
+            "fee": "$400"
+        },
+        {
+            "id": 3,
+            "fee": "$900"
+        }
+    ]
+}
