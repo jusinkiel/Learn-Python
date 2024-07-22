@@ -18,15 +18,13 @@ import json
 import os
 
 def Add_Menu():
-    mode = 'r+' if os.path.exists('food.json') else 'w+'
-    file = open('food.json', 'w+') # w+ will create a file if the file is not exist
 
     foods = [] # initial array len(foods) = 0
-    print(file.readlines())
 
-    # If the file is exists and not empty file, i will replace foods with the file
-    if file != None and len(file.read()) > 0: 
+    if os.path.exists('food.json') and os.path.getsize('food.json'):
+        file = open('food.json', 'r') 
         foods = json.load(file)
+        file.close()
 
     print("1. Foods")
     print("2. Meals")
@@ -48,12 +46,8 @@ def Add_Menu():
             "price": price
         })
 
-    if mode == 'r+':
-        file.seek(0)
-
+    file = open('food.json', 'w')
     json.dump(foods, file, indent=4)
-
-    file.truncate()
     file.close()
 
 
