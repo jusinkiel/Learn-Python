@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "category": "food",
+        "foodName": "Rice",
+        "price": 2
+    },
+    {
+        "id": 2,
+        "category": "food",
+        "foodName": "Chicken",
+        "price": 3
+    },
+    {
+        "id": 3,
+        "category": "meal",
+        "foodName": "Fried Rice",
+        "contents": [
+            "Rice",
+            "Chicken",
+            "Egg",
+            "Sausage"
+        ],
+        "price": 5
+    },
+    {
+        "id": 1,
+        "category": "food",
+        "foodName": "Beef",
+        "price": 5
+    }
+]
