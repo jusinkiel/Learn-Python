@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <style>
+        .product-card {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 10px;
+            margin: 8px 0;
+            background: #f9f9f9;
+        }
+    </style>
+   
+</head>
+<body>
+
+    <button id="btn" (onclick)="myFunction()"> Click Me to Asking to the Server</button>
+
+    <div id="products"></div>
+    
+    <script>
+        $(document).ready(() => {
+
+            $('#btn').on('click', () => {
+                myFunction()
+            })
+            
+        })
+
+        function myFunction() {
+            $.ajax({
+                url: 'https://dummyjson.com/products?limit=10&skip=10&select=title,price',
+                method: 'GET',
+                success: function(data) {
+                    if (data && data.products) {
+                        data.products.forEach(function(product) {
+                            const div = `<div class='product-card'><strong>${product.title}</strong>: $${product.price}</div>`;
+                            $('#products').append(div);
+                        });
+                    }
+                },
+                error: function() {
+                    $('#products').append('<div style="color:red">Failed to load products.</div>');
+                }
+            });
+        }
+    </script>
+</body>
+</html>

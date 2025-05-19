@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "category": "food",
+        "foodName": "Chocolate",
+        "price": 2
+    },
+    {
+        "id": 2,
+        "category": "meal",
+        "foodName": "Chocolate Ice Cream",
+        "price": 4,
+        "contents": [
+            "Milk",
+            "Water",
+            "Sugar",
+            "Cocoa",
+            "Peanuts",
+            "exit"
+        ]
+    },
+    {
+        "id": 3,
+        "category": "meal",
+        "foodName": "Chicken Noodle Soup",
+        "price": 5,
+        "contents": [
+            "Chicken",
+            "Egg Noodle",
+            "Boiled Water",
+            "Egg",
+            "Carrot"
+        ]
+    },
+    {
+        "id": 4,
+        "category": "food",
+        "foodName": "Apple Juice",
+        "price": 1
+    },
+    {
+        "id": 5,
+        "category": "food",
+        "foodName": "Orange Juice",
+        "price": 2
+    }
+]

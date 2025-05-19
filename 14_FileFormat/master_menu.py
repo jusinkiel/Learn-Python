@@ -46,6 +46,37 @@ def Add_Menu():
             "price": price
         })
 
+    elif fm == '2':
+        name = input("Meal  Name : ")
+        price = int(input("Meal Price : "))
+
+        dd = []
+        tp = None 
+
+        while tp != 'exit':
+            tp = input("Contents : ")
+
+            # Option 1
+            if tp == 'exit':
+                break
+
+            dd.append(tp)
+
+            # Option 2
+            # if tp != 'exit': 
+            #     dd.append(tp)
+            # else:
+            #     break
+
+        foods.append({
+            "id": new_id,
+            "category": "meal", 
+            "foodName": name, 
+            "price": price,
+            "contents": dd
+        })
+
+
     file = open('food.json', 'w')
     json.dump(foods, file, indent=4)
     file.close()
@@ -64,5 +95,7 @@ while True:
 
     else:
         break
+
+    os.system("clear")
 
 input("Press enter to continue")
